@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --container-width: 1110px;
+    --container-space: 25px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.header-nav {
+    background: #E5E5E5;
+    padding: 10px 15px;
+}
+
+.header-nav-link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    display: block;
+    color: #333333;
+    font-size: 14px;
+}
+
+.header-botton {
+    padding: 20px 0;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 20px;
+}
+
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-space) * 2);
+    padding: 0 var(--container-space);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    gap: 18px;
+}
+
+.header-botton-h3 {
+    text-transform: uppercase;
+    color: #F13C6E;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.header-call {
+    gap: 40px;
+}
+
+.link-call {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.header-call-btn {
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    height: 40px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+}
+
+/* header botton second */
+
+
+
+.header-botton-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-link-menu {
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    padding: 20px 23px;
+}
+
+/* end header-botton second */
+/* main title rose */
+.main-logo {
+    min-height: calc(100vh - 217px);
+    background-image: url(../assets/img/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-logo-title {
+
+    max-width: 310px;
+}
+
+.main-logo-txt {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.main-logo-subtxt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 50px 0;
+}
+
+.main-logo-link {
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    color: white;
+    padding: 12px 33px;
+    max-width: 111px;
+    text-align: center;
+}
+
+/* end main rose */
+/* main content card table */
+.main {
+    background: #E5E5E5;
+    min-height: 100vh;
+}
+
+.main-card {
+    padding-bottom: 100px;
+}
+
+.main-txt {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 80px;
+}
+
+.card-list {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.card {
+    background: white;
+    margin-top: 30px;
+    padding: 25px 30px;
+    max-width: 205px;
+}
+
+.card-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.card-price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    padding: 20px 0;
+}
+
+.card-btn {
+    background: #F13C6E;
+    border-radius: 30px;
+    padding: 8px 40px;
+    color: white;
+    margin-top: 20px;
+}
+
+/* end main content card table */
+/* icon card */
+
+.card-icon-left {
+    width: 100%;
+    max-width: 480px;
+    background: #F13C6E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 40px;
+    flex-wrap: wrap;
+}
+
+.card-description-first {
+    max-width: 250px;
+    color: white;
+}
+
+.card-icon-h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-icon-txt {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 0;
+}
+
+.card-icon-input {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.card-icon-link {
+    background: #F13C6E;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    color: white;
+    padding: 9px 30px;
+    display: block;
+}
+
+.card-icon-right {
+    max-width: 480px;
+    background: #F13C6E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 40px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-icon-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* end icon card */
+/* logo brand */
+.logo-brand {
+    padding-top: 100px;
+}
+
+.logo-brand-flex {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 1px;
+}
+
+.logo-brand-icon {
+    background: white;
+    padding: 35px 60px;
+}
+
+.logo-brand-link {
+    color: #000000;
+    font-size: 353%;
+    font-weight: 400;
+}
+
+/* End logo brand */
+/* Footer */
+.footer-top {
+    background: white;
+    padding: 60px 0 62px;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-top-col {
+    min-width: 100px;
+    width: calc(25% - 23px);
+}
+
+.footer-top-nav {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-top-h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 140.62%;
+    color: #000000;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EFEFEF;
+    max-width: 150px;
+}
+
+.footet-top-nav-link {
+    color: #828282;
+    padding: 7px 0;
+}
+
+.footer-call {
+    gap: 40px;
+}
+
+.footer-middle {
+    padding: 30px 0;
+    border-top: 1px solid #EFEFEF;
+}
+
+.footer-middle-link {
+    border: 2px solid #F13C6E;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-botton {
+    background: #EFEFEF;
+    padding: 25px 0;
+}
+
+.footer-botton-h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+}
